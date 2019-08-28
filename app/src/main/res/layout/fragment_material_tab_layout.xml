@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MaterialTabLayoutFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/tab_text_1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/tab_text_2"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.ofex.tabbedlayoutexample.NonSwipeableViewPager
+
+        android:layout_below="@+id/tabs"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_above="@+id/llPrevNextButtons"/>
+
+    <LinearLayout
+        android:id="@+id/llPrevNextButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#616161"
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+        android:visibility="visible"
+        android:weightSum="2">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:text="Previous"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="Next"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Add"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
