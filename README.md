@@ -14,6 +14,6 @@ Introduction
 Screenshots
 -------------
 
-<img src="screenshots/1.png" height="400" alt="Screenshot"/> <img src="screenshots/2.png" height="400" alt="Screenshot"/>
-<img src="screenshots/3.png" height="400" alt="Screenshot"/>
+<img src="screenshots/1.jpg" height="400" alt="Screenshot"/> <img src="screenshots/2.jpg" height="400" alt="Screenshot"/>
+<img src="screenshots/3.jpg" height="400" alt="Screenshot"/>
 
